@@ -35,4 +35,8 @@ RUN apt-get update && apt-get install -y \
 # Colors and italics for tmux
 ENV TERM=xterm-256color-italic
 
+
+VOLUME ["/work"]
+WORKDIR /work
+
 RUN chsh -s /usr/bin/zsh
